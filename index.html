@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Billi 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #ffb6c1;
+      color: white;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .letter {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .timeline {
+      position: relative;
+      margin-top: 3rem;
+      padding-left: 2rem;
+      border-left: 4px solid #ffb6c1;
+    }
+    .timeline div {
+      margin-bottom: 1.5rem;
+    }
+    .timeline span {
+      font-weight: bold;
+      color: #ff69b4;
+    }
+    .quiz {
+      margin-top: 3rem;
+      background: #fffafc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .quiz h3 {
+      color: #d63384;
+    }
+    .heart {
+      position: fixed;
+      font-size: 2rem;
+      animation: float 5s linear infinite;
+      color: pink;
+    }
+    @keyframes float {
+      0% {transform: translateY(0); opacity: 1;}
+      100% {transform: translateY(-100vh); opacity: 0;}
+    }
+  </style>
+</head>
+<body>
+  <header>Happy Birthday Billi 🎂💖</header>
+
+  <div class="section">
+    <div class="letter">
+      To My Dearest Billi 🐱,
+
+      Tum meri zindagi ka sabse pyaara hissa ho. Har pal, har lamha tumhare saath ek khubsurat yaad ban jaata hai. Tumhari muskaan meri duniya roshan karti hai aur tumhara saath meri har kami ko poora karta hai. 💘
+
+      Aaj tumhara birthday hai, aur main chahta hoon ki tum mehsoos karo kitni special ho tum mere liye. Tum sirf meri girlfriend nahi, meri pyaari biwi ho, meri billi ho, aur meri sabse pyaari baachi ho. 💞
+
+      I promise, main hamesha tumhare saath rahunga—har khushi, har mushkil mein. Happy Birthday, meri jaan. 🎂💝
+
+      Tumhara hamesha,
+      ~ Billa 🐯
+    </div>
+
+    <h2>📸 Our Memories</h2>
+    <div class="gallery">
+      <img src="assets/images/us1.jpg" alt="Memory 1">
+      <img src="assets/images/us2.jpg" alt="Memory 2">
+      <img src="assets/images/us3.jpg" alt="Memory 3">
+    </div>
+
+    <h2>💕 Our Love Timeline</h2>
+    <div class="timeline">
+      <div><span>💖 We Met:</span> 14th Feb 2023, a day that changed everything.</div>
+      <div><span>💌 First 'I Love You':</span> After 3 weeks of knowing you're the one.</div>
+      <div><span>📸 First Picture Together:</span> The smile that made my heart skip.</div>
+      <div><span>🎉 Birthday Surprise:</span> 15th March — Your special day! 💝</div>
+    </div>
+
+    <div class="quiz">
+      <h3>🎁 Surprise Quiz for You, Billi!</h3>
+      <p><strong>Q1:</strong> What is Billa’s favorite thing about Billi?</p>
+      <p><strong>Q2:</strong> When did we first say "I love you"?</p>
+      <p><strong>Q3:</strong> What gift did Billa give on the first birthday?</p>
+      <p>If you answered all, go to your surprise folder 📂❤️</p>
+    </div>
+  </div>
+  
+  <!-- 🎁 Next Button -->
+<div style="text-align: center; margin-top: 2rem;">
+  <button onclick="location.href='second.html'" style="
+    background-color: #ff69b4;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  ">
+    ➡️ Next Surprise
+  </button>
+</div>
+
+<audio id="bg-music" autoplay loop muted>
+  <source src="assets/love.mp3" type="audio/mp3" />
+</audio>
+
+<script>
+  document.addEventListener("click", () => {
+    const audio = document.getElementById("bg-music");
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
+</script>
+
+
+
+  <script src="app.js"></script>
+
+  <script src="style.css"></script>
+  <script>
+    function spawnHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerText = "💖";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.top = "100vh";
+      heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(spawnHeart, 300);
+  </script>
+</body>
+</html>
