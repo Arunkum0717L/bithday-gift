@@ -38,14 +38,14 @@ const quizHTML = `
   <form id="quiz-form">
     <p><strong>Q1:</strong> What is Billa’s favorite thing about Billi?</p>
     <label><input type="radio" name="q1" value="Her smile"> Her smile</label><br>
-    <label><input type="radio" name="q1" value="Her anger"> Her anger</label><br>
+    <label><input type="radio" name="q1" value="all of things about you"> all of things about you</label><br>
     <label><input type="radio" name="q1" value="Her voice"> Her voice</label><br>
     <label><input type="radio" name="q1" value="Her hugs"> Her hugs</label><br><br>
-
+   
     <p><strong>Q2:</strong> When did we first say "I love you"?</p>
     <label><input type="radio" name="q2" value="After 1 week"> After 1 week</label><br>
     <label><input type="radio" name="q2" value="After 3 weeks"> After 3 weeks</label><br>
-    <label><input type="radio" name="q2" value="After 1 month"> After 1 month</label><br><br>
+    <label><input type="radio" name="q2" value="After 2 month"> After 2 month</label><br><br>
 
     <p><strong>Q3:</strong> What gift did Billa give on the first birthday?</p>
     <label><input type="radio" name="q3" value="Teddy"> Teddy</label><br>
@@ -64,9 +64,9 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("quiz-form").addEventListener("submit", function (e) {
     e.preventDefault();
     const answers = {
-      q1: "Her smile",
-      q2: "After 3 weeks",
-      q3: "Love Letter"
+      q1: "all of things about you",
+      q2: "After 2 month",
+      q3: "Teddy"
     };
 
     const form = new FormData(this);
