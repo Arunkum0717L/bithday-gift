@@ -47,7 +47,7 @@ const quizHTML = `
     <label><input type="radio" name="q2" value="After 3 weeks"> After 3 weeks</label><br>
     <label><input type="radio" name="q2" value="After 2 month"> After 2 month</label><br><br>
 
-    <p><strong>Q3:</strong> What gift did Billa give on the first birthday?</p>
+    <p><strong>Q3:</strong> What gift did Billa give on the first meetup ?</p>
     <label><input type="radio" name="q3" value="Teddy"> Teddy</label><br>
     <label><input type="radio" name="q3" value="Ring"> Ring</label><br>
     <label><input type="radio" name="q3" value="Love Letter"> Love Letter</label><br>
